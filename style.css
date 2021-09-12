@@ -10,8 +10,19 @@ https://coolors.co/d8e2dc-ffe5d9-ffcad4-f4acb7-9d8189
 
 /* Global styles
 ----------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body { 
     color: #d8e2dc;
+    margin: 0;
+    padding: 0;
+    font-family: darkmode-off, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -21,6 +32,25 @@ a{
 }
 a:hover {
     text-decoration: none;
+}
+h1 {
+    font-size: 50px;
+    line-height: .5;
+    text-shadow: 2px 2px #ffcad4;
+}
+h2 {
+    margin: 0;
+    font-size: 30px;
+}
+h1, h2 {    
+    font-family: acier-bat-noir, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.content-wrap{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* Profile
@@ -35,16 +65,30 @@ header {
 .projects {
     background: #f4acb7;
     color: white;
+    overflow: hidden;
+    border-bottom: 1px solid #ffe5d9;
+    padding: 25px 0;
+}
+.projects img{
+    float: left;
+    margin-right: 20px;
 }
 .projects a{ 
+    color: #9d8189;
+}
+.projects .btn { 
     color: #ffe5d9;
     background: #9d8189;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
-.projects a:hover{
+.projects .btn :hover{
     background: rgba(157,129,137,80%);
+}
+.projects h3{
+    margin-top: 0;
 }
 
 /* Work Experience
@@ -56,6 +100,9 @@ header {
 
 /* Education
 ----------------------------------------------*/
+.education {
+    color: #9d8189;
+}
 
 /* Contact Info
 ----------------------------------------------*/
